@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <!-- As a heading -->
+                        <nav class="navbar bg-secondary navbar-dark">
+                            <div class="container-fluid">
+                            <span class="navbar-brand mb-0 h1">CONTACT APP</span>
+                            </div>
+                        </nav>
+                </div>
+
+                <div *ngFor="let i of contactData.data" class="col col-12 col-sm-6col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+
+
+                    <div class="card" >
+                        <img height="200px"src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">NAME: {{i.name}}</h5>
+                          <p class="card-text">ID : {{i.id}}</p>
+                         
+                          <p class="card-text">EMAIL : {{i.email}}</p>
+                          <p class="card-text">VAT : {{i.vat}}</p>
+                          <p class="card-text">PHONE : {{i.phone}}</p>
+                          <p class="card-text">COUNTRY : {{i.country}}</p>
+                          <p class="card-text">ADDRESS : {{i.addresses[0].id}}, {{i.addresses[0].street}}, {{i.addresses[0].streetName}}, {{i.addresses[0].buildingNumber}}, {{i.addresses[0].city}}, {{i.addresses[0].zipcode}}, {{i.addresses[0].country}}, {{i.addresses[0].county_code}}, {{i.addresses[0].latitude}}, {{i.addresses[0].longitude}}</p>
+                          <p class="card-text">WEBSITE : {{i.website}}</p>
+                          <p class="card-text">CONTACT : {{i.contact}}</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
